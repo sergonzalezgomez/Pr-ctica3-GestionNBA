@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gestionNBA.dialogos.DialogoPreferencias">
+  <grid id="cbd77" binding="panelPrincipal" layout-manager="FormLayout">
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <colspec value="fill:d:grow"/>
+    <constraints>
+      <xy x="48" y="54" width="436" height="297"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="4c6a6" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="18e43" class="javax.swing.JButton" binding="botAceptar">
+            <constraints/>
+            <properties>
+              <icon value="aceptar.png"/>
+              <preferredSize width="45" height="45"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idiomaResourceBundle" key="texto.toolTipButtonAceptar"/>
+            </properties>
+          </component>
+          <component id="43c28" class="javax.swing.JButton" binding="botCerrar">
+            <constraints/>
+            <properties>
+              <icon value="loginCancelar.png"/>
+              <preferredSize width="45" height="45"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idiomaResourceBundle" key="texto.toolTipButtonCancelar"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="10a1d" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="a4b23" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <icon value="spain.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="39daf" class="javax.swing.JRadioButton" binding="radioBotSpain">
+            <constraints/>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="d4896" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <icon value="uk.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="66774" class="javax.swing.JRadioButton" binding="radioBotUk">
+            <constraints/>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="buttonGroup1">
+      <member id="39daf"/>
+      <member id="66774"/>
+    </group>
+  </buttonGroups>
+</form>

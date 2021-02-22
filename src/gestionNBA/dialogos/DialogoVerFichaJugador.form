@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gestionNBA.dialogos.DialogoVerFichaJugador">
+  <grid id="cbd77" binding="panelPrincipal" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="48" y="54" width="436" height="406"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="94766" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="5e420" class="javax.swing.JButton" binding="botCerrar">
+            <constraints/>
+            <properties>
+              <icon value="loginCancelar.png"/>
+              <preferredSize width="45" height="45"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idiomaResourceBundle" key="texto.toolTipButtonCancelar"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="36a05" layout-manager="FormLayout">
+        <rowspec value="center:d:noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <colspec value="fill:d:noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:max(d;4px):noGrow"/>
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="372cb" class="javax.swing.JLabel" binding="lblFotoFichaJugador">
+            <constraints>
+              <grid row="0" column="0" row-span="11" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+              <forms top="0" left="10" bottom="0" right="0" defaultalign-vert="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <preferredSize width="170" height="16"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="c4f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <font size="18" style="0"/>
+              <preferredSize width="74" height="25"/>
+              <text resource-bundle="idiomaResourceBundle" key="texto.labelNombreJugador"/>
+            </properties>
+          </component>
+          <component id="4a1ea" class="javax.swing.JLabel" binding="lblNombreFichaJugador">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <font size="16" style="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="e1c3" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <font size="18" style="0"/>
+              <text resource-bundle="idiomaResourceBundle" key="texto.labelApellidosJugador"/>
+            </properties>
+          </component>
+          <component id="b502b" class="javax.swing.JLabel" binding="lblApellidosFichaJugador">
+            <constraints>
+              <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <font size="16" style="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="96526" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <font size="18" style="0"/>
+              <text resource-bundle="idiomaResourceBundle" key="texto.labelFechaNacimientoJugador"/>
+            </properties>
+          </component>
+          <component id="74d7d" class="javax.swing.JLabel" binding="lblFechaNacimientoFichaJugador">
+            <constraints>
+              <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <font size="16" style="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="9a127" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="16" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <font size="18" style="0"/>
+              <text resource-bundle="idiomaResourceBundle" key="texto.labelPuntosJugador"/>
+            </properties>
+          </component>
+          <component id="23c60" class="javax.swing.JLabel" binding="lblPuntosFichaJugador">
+            <constraints>
+              <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <font size="16" style="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="a401e" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="20" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <font size="18" style="0"/>
+              <text resource-bundle="idiomaResourceBundle" key="texto.labelEquipoJugador"/>
+            </properties>
+          </component>
+          <component id="acf2d" class="javax.swing.JLabel" binding="lblTxtNombreEquipo">
+            <constraints>
+              <grid row="22" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <font size="16" style="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="8fc92" class="javax.swing.JLabel" binding="lblEquipoFichaJugador">
+            <constraints>
+              <grid row="24" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <font size="16" style="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
