@@ -94,9 +94,9 @@ public class Modelo {
      * @param equipoEliminado Equipo recibido por el método.
      */
     public void eliminarEquipo(Equipo equipoEliminado){
-        for(Jugador jugador : getJugadores()){
-            if (jugador.getEquipo() != null && jugador.getEquipo().getNombreEquipo().equals(equipoEliminado.getNombreEquipo())) {
-                jugador.setEquipo(null);
+        for(Jugador jugador : jugadores){
+            if (jugador.getEquipos().contains(equipoEliminado)) {
+                jugador.eliminarEquipo(equipoEliminado);
             }
         }
         equipos.remove(equipoEliminado);

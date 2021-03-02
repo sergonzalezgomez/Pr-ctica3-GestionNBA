@@ -55,6 +55,8 @@ public class Equipo implements Comparable<Equipo>, Serializable {
         this.jugadores = jugadores;
     }
 
+    public void annadirJugadorAEquipos(Jugador jugador) { jugadores.add(jugador); }
+
     public int getNumJugadoresEquipo() { return getJugadores().size(); }
 
     public Icon getFotoEquipo() {
@@ -65,6 +67,9 @@ public class Equipo implements Comparable<Equipo>, Serializable {
         this.fotoEquipo = fotoEquipo;
     }
 
+    public void eliminarJugador(Jugador jugador){
+        jugadores.remove(jugador);
+    }
 
     @Override
     public String toString() {

@@ -94,7 +94,7 @@ public class DialogoVerFichaConferencia extends JDialog {
     private void listarEquiposConferencias() {
         equiposDlm.clear();
         for(Equipo equipo : modelo.getEquipos()){
-            if (equipo.getConferencia() != null && equipo.getConferencia().getNombreConferencia().equals(conferencia.getNombreConferencia())) {
+            if (equipo.getConferencia() != null && equipo.getConferencia().equals(conferencia)) {
                 equiposDlm.addElement(equipo);
             }
         }

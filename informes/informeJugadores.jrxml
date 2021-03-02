@@ -14,7 +14,7 @@
 	<field name="fechaNacimiento" class="java.time.LocalDate"/>
 	<field name="puntosAnotados" class="java.lang.Integer"/>
 	<field name="fotoJugador" class="javax.swing.ImageIcon"/>
-	<field name="equipo" class="gestionNBA.base.Equipo"/>
+	<field name="equipos" class="java.util.List"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -29,13 +29,6 @@
 				<reportElement style="SubTitle" x="100" y="46" width="220" height="22" uuid="0b5308cc-82cf-49a0-8011-6f875d4c5e32"/>
 				<text><![CDATA[Listado Jugadores NBA]]></text>
 			</staticText>
-			<image>
-				<reportElement x="465" y="0" width="90" height="90" uuid="69e87f29-1162-4079-a745-b65f4a7fe670">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<imageExpression><![CDATA["images/nbaLogo.png"]]></imageExpression>
-			</image>
 			<rectangle>
 				<reportElement x="0" y="100" width="555" height="3" backcolor="#FA2E2A" uuid="266bdc13-a09d-4e24-9a3e-104a7a215b08"/>
 			</rectangle>
@@ -92,18 +85,18 @@
 				<text><![CDATA[fotoJugador]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="470" y="0" width="85" height="30" uuid="2a71a243-135c-4e9e-a743-62fefd49ad40">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6faee8e9-24ea-45d3-a823-7bc992b2d61f"/>
+				<reportElement x="470" y="0" width="85" height="30" uuid="e678a668-45d3-4af8-9c16-8f31140e55a7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d83a6c09-85d4-4bc2-869d-194d7f8e59c7"/>
 				</reportElement>
 				<textElement>
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[equipo]]></text>
+				<text><![CDATA[equipos]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="75" splitType="Stretch">
+		<band height="71" splitType="Stretch">
 			<textField>
 				<reportElement x="80" y="21" width="80" height="30" forecolor="#292424" uuid="26effa64-f962-4a03-a9e7-e789c367efdc">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ca377f24-1c4a-40d8-b229-5520b0294c67"/>
@@ -151,10 +144,10 @@
 				<reportElement x="0" y="70" width="555" height="1" forecolor="#ABB8D4" uuid="3c080b38-d3be-471d-a33c-c2ba1aeca8e0"/>
 			</line>
 			<textField>
-				<reportElement x="470" y="20" width="85" height="30" uuid="5c4152ce-b2a6-4d96-a63f-8c2577cf69e2">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6faee8e9-24ea-45d3-a823-7bc992b2d61f"/>
+				<reportElement x="470" y="20" width="85" height="30" uuid="293cfcbe-db25-40b1-9945-149d592de85f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d83a6c09-85d4-4bc2-869d-194d7f8e59c7"/>
 				</reportElement>
-				<textFieldExpression><![CDATA[$F{equipo}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{equipos}.size()]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

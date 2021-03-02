@@ -46,9 +46,7 @@
         <rowspec value="top:4dlu:noGrow"/>
         <rowspec value="center:max(d;4px):noGrow"/>
         <rowspec value="top:4dlu:noGrow"/>
-        <rowspec value="center:max(d;4px):noGrow"/>
-        <rowspec value="top:4dlu:noGrow"/>
-        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="center:d:grow"/>
         <rowspec value="top:4dlu:noGrow"/>
         <rowspec value="center:max(d;4px):noGrow"/>
         <rowspec value="top:4dlu:noGrow"/>
@@ -162,24 +160,32 @@
               <text resource-bundle="idiomaResourceBundle" key="texto.labelEquipoJugador"/>
             </properties>
           </component>
-          <component id="acf2d" class="javax.swing.JLabel" binding="lblTxtNombreEquipo">
+          <scrollpane id="14d67">
             <constraints>
-              <grid row="22" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <forms/>
+              <grid row="22" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false" defaultalign-vert="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="f78ab" class="javax.swing.JList" binding="listaEquiposDialogoJugador">
+                <constraints/>
+                <properties>
+                  <font size="16" style="0"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <component id="8f0d0" class="javax.swing.JButton" binding="botEliminarEquipos">
+            <constraints>
+              <grid row="22" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false" defaultalign-vert="false"/>
             </constraints>
             <properties>
-              <font size="16" style="0"/>
+              <icon value="eliminarJugador.png"/>
+              <preferredSize width="45" height="45"/>
               <text value=""/>
-            </properties>
-          </component>
-          <component id="8fc92" class="javax.swing.JLabel" binding="lblEquipoFichaJugador">
-            <constraints>
-              <grid row="24" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <forms/>
-            </constraints>
-            <properties>
-              <font size="16" style="0"/>
-              <text value=""/>
+              <toolTipText resource-bundle="idiomaResourceBundle" key="texto.toolTipButtonEliminarJugador"/>
             </properties>
           </component>
         </children>

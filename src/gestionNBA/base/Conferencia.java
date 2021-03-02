@@ -11,8 +11,8 @@ public class Conferencia implements Comparable<Conferencia>, Serializable {
     private int annoFundacion;
     private int titulos;
     private String jefeConferencia;
-    private List<Equipo> equipos;
     private Icon fotoConferencia;
+    private List<Equipo> equipos;
 
 
     public Conferencia(String nombreConferencia, int annoFundacion, int titulos, String jefeConferencia, Icon fotoConferencia) {

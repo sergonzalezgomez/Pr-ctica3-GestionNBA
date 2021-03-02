@@ -18,6 +18,7 @@
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-beanutils-1.8.3.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-logging-1.2.1.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-collections4-4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jasperreports-javaflow-6.0.4.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

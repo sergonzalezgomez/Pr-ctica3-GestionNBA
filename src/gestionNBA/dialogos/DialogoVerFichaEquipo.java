@@ -106,8 +106,10 @@ public class DialogoVerFichaEquipo extends JDialog {
     private void eliminarJugadoresEquipo() {
         List<Jugador> jugadorLista = listaJugadoresFichaEquipo.getSelectedValuesList();
         for (Jugador jugador : jugadorLista) {
-            jugador.setEquipo(null);
+            jugador.eliminarEquipo(equipo);
+            equipo.eliminarJugador(jugador);
         }
+        listarJugadores();
     }
 
     /**
@@ -116,11 +118,8 @@ public class DialogoVerFichaEquipo extends JDialog {
     private void listarJugadores() {
         jugadoresDlm.clear();
         for(Jugador jugador : modelo.getJugadores()){
-            if (jugador.getEquipo() != null) {
-                String nombreEquipo = jugador.getEquipo().getNombreEquipo();
-                if (equipo.getNombreEquipo().equals(nombreEquipo)) {
-                    jugadoresDlm.addElement(jugador);
-                }
+            if (equipo.getJugadores().contains(jugador)) {
+                jugadoresDlm.addElement(jugador);
             }
         }
     }

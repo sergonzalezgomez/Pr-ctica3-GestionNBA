@@ -57,9 +57,7 @@ public class DialogoModificarConferencia extends JDialog {
     private void listarEquiposConferencias() {
         equiposDlm.clear();
         for(Equipo equipo : modelo.getEquipos()){
-            if (equipo.getConferencia() != null && equipo.getConferencia().getNombreConferencia().equals(conferencia.getNombreConferencia())) {
-                equiposDlm.addElement(equipo);
-            }
+            equiposDlm.addElement(equipo);
         }
     }
 
@@ -103,6 +101,11 @@ public class DialogoModificarConferencia extends JDialog {
     }
 
 
+    /**
+     * Método que comprueba que los datos introducidos a través de los campos no estén vacios.
+     *
+     * @return true si todos los datos son correctos, false en caso contrario.
+     */
     private boolean datosConferenciaCorrectos() {
         boolean correcto = true;
         if (txtNombreModificado.getText().isEmpty() || txtAnnoFundacionModificado.getText().isEmpty() || txtTitulosModificado.getText().isEmpty()

@@ -9,6 +9,7 @@ import gestionNBA.util.Util;
 import javax.swing.*;
 import java.awt.event.*;
 import java.io.File;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class DialogoModificarJugador extends JDialog {
@@ -18,15 +19,15 @@ public class DialogoModificarJugador extends JDialog {
     private JButton botModificar;
     private JTextField txtNombreModificado;
     private JSpinner spnPuntosModificados;
-    private JComboBox cmboxEquiposModificado;
     private JTextField txtApellidosModificados;
     private DatePicker datePickerFechaModificada;
     private JButton botAnnadirImagenModificada;
+    private JList listaEquipos;
     private ResourceBundle resourceBundle;
     private Jugador jugador;
     private Modelo modelo;
 
-    DefaultComboBoxModel<Equipo> equiposDcm;
+    DefaultListModel<Equipo> equiposDlm;
 
     public DialogoModificarJugador(Jugador jugador, Modelo modelo) {
         this.jugador = jugador;
@@ -80,18 +81,17 @@ public class DialogoModificarJugador extends JDialog {
      * Método que inicializa los diferentes modelos para listar.
      */
     private void iniciarModelos() {
-        equiposDcm = new DefaultComboBoxModel<>();
-        cmboxEquiposModificado.setModel(equiposDcm);
+        equiposDlm = new DefaultListModel<>();
+        listaEquipos.setModel(equiposDlm);
     }
 
     /**
      * Metodo que refresca el comboBox de Equipos de la sección del Jugador.
      */
-    private void listarEquipoComboBox() {
-        equiposDcm.removeAllElements();
-        equiposDcm.addElement(null);
+    private void listarEquipos() {
+        equiposDlm.clear();
         for(Equipo equipo : modelo.getEquipos()){
-            equiposDcm.addElement(equipo);
+            equiposDlm.addElement(equipo);
         }
     }
 
@@ -99,18 +99,19 @@ public class DialogoModificarJugador extends JDialog {
      * Método que muestra en los campos los datos del Jugador seleccionado.
      */
     private void mostrarDatosFichaJugador() {
-        listarEquipoComboBox();
+        listarEquipos();
         txtNombreModificado.setText(jugador.getNombreJugador());
         txtApellidosModificados.setText(jugador.getApellidosJugador());
         datePickerFechaModificada.setDate(jugador.getFechaNacimiento());
         spnPuntosModificados.setValue(jugador.getPuntosAnotados());
-        cmboxEquiposModificado.setSelectedItem(jugador.getEquipo());
         lblFotoModificada.setIcon(jugador.getFotoJugador());
 
     }
 
     /**
      * Método que comprueba que los datos introducidos a través de los campos no estén vacios.
+     *
+     * @return true si todos los datos son correctos, false en caso contrario.
      */
     private boolean datosJugadorCorrectos() {
         boolean datosCorrectos = true;
@@ -147,13 +148,26 @@ public class DialogoModificarJugador extends JDialog {
                 jugador.setApellidosJugador(txtApellidosModificados.getText());
                 jugador.setAnnoNacimiento(datePickerFechaModificada.getDate());
                 jugador.setPuntosAnotados(Integer.parseInt(String.valueOf(spnPuntosModificados.getValue())));
-                jugador.setEquipo((Equipo) cmboxEquiposModificado.getSelectedItem());
                 jugador.setFotoJugador(lblFotoModificada.getIcon());
+                annadirEquiposAJugador();
                 dispose();
             }
         }
         else {
             Util.mostrarDialogoError(resourceBundle.getString("texto.dialogoErrorDatosIncorrectos"));
+        }
+    }
+
+    /**
+     * Método que añade todos los Equipos seleccionados del jlist al Jugador seleccionado.
+     */
+    private void annadirEquiposAJugador() {
+        List<Equipo> equipoLista = listaEquipos.getSelectedValuesList();
+        for (Equipo equipo : equipoLista) {
+            if (!jugador.getEquipos().contains(equipo)) {
+                jugador.annadirEquiposAJugador(equipo);
+                equipo.annadirJugadorAEquipos(jugador);
+            }
         }
     }
 

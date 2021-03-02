@@ -59,9 +59,8 @@ public class DialogoModificarEquipo extends JDialog {
     private void listarJugadores() {
         jugadoresDlm.clear();
         for(Jugador jugador : modelo.getJugadores()){
-            if (jugador.getEquipo() != equipo) {
-                jugadoresDlm.addElement(jugador);
-            }
+            jugadoresDlm.addElement(jugador);
+
         }
     }
 
@@ -157,12 +156,17 @@ public class DialogoModificarEquipo extends JDialog {
     private void annadirJugadoresAEquipo() {
         List<Jugador> jugadorLista = listaJugadoresDialogoEquipo.getSelectedValuesList();
         for (Jugador jugador : jugadorLista) {
-            jugador.setEquipo(equipo);
+            if (!jugador.getEquipos().contains(equipo)) {
+                jugador.annadirEquiposAJugador(equipo);
+                equipo.annadirJugadorAEquipos(jugador);
+            }
         }
     }
 
     /**
      * Método que comprueba que los datos introducidos a través de los campos no estén vacios.
+     *
+     * @return true si todos los datos son correctos, false en caso contrario.
      */
     private boolean datosEquipoCorrectos() {
         boolean datosCorrectos = true;

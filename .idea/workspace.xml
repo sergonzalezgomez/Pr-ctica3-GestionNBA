@@ -6,13 +6,142 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e13f152-7655-4669-8ce9-0d2961592bc3" name="Default Changelist" comment="" />
+    <list default="true" id="6e13f152-7655-4669-8ce9-0d2961592bc3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Practica3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practica3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Practica3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundles/idiomaResourceBundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/idiomaResourceBundle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundles/idiomaResourceBundle_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/idiomaResourceBundle_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/informes/informeEquipos.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/informes/informeEquipos.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/informes/informeEquipos.jrxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/informes/informeJugadores.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/informes/informeJugadores.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/Principal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/base/Conferencia.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/base/Equipo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/base/Jugador.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/base/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/base/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/base/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/dialogos/DialogoModificarConferencia.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/dialogos/DialogoModificarEquipo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/dialogos/DialogoModificarJugador.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/dialogos/DialogoPreferencias.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/dialogos/DialogoVerFichaConferencia.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/dialogos/DialogoVerFichaEquipo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/dialogos/DialogoVerFichaJugador.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/dialogos/SplashScreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/dialogos/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/dialogos/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/dialogos/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/mvc/gui/Controlador.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/mvc/gui/Vista.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/mvc/gui/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/mvc/gui/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/mvc/gui/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/mvc/modelo/Modelo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/mvc/modelo/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/mvc/modelo/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/mvc/modelo/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/util/Util.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/util/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/util/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/gestionNBA/util/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-16.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/META-INF/Practica3.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/base/Conferencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/base/Conferencia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/base/Equipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/base/Equipo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/base/Jugador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/base/Jugador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarConferencia$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarConferencia$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarConferencia$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarConferencia$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarConferencia$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarConferencia$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarConferencia$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarConferencia$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarConferencia$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarConferencia$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarConferencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarConferencia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarEquipo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarEquipo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarEquipo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarEquipo$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarEquipo$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarEquipo$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarEquipo$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarEquipo$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarEquipo$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarEquipo$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarEquipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarEquipo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarJugador$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarJugador$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarJugador$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarJugador$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarJugador$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarJugador$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarJugador$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarJugador$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarJugador$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarJugador$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarJugador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoModificarJugador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoVerFichaConferencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoVerFichaConferencia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoVerFichaEquipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoVerFichaEquipo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoVerFichaJugador$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoVerFichaJugador$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoVerFichaJugador$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoVerFichaJugador$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoVerFichaJugador$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoVerFichaJugador$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoVerFichaJugador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/dialogos/DialogoVerFichaJugador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/mvc/gui/Controlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/mvc/gui/Controlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/mvc/gui/Vista.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/mvc/gui/Vista.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/mvc/modelo/Modelo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/gestionNBA/mvc/modelo/Modelo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/idiomaResourceBundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/idiomaResourceBundle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica3/idiomaResourceBundle_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica3/idiomaResourceBundle_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/base/Conferencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/base/Conferencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/base/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/base/Equipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/base/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/base/Jugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoModificarConferencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoModificarConferencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoModificarEquipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoModificarEquipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoModificarJugador.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoModificarJugador.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoModificarJugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoModificarJugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoVerFichaConferencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoVerFichaConferencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoVerFichaEquipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoVerFichaEquipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoVerFichaJugador.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoVerFichaJugador.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoVerFichaJugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/dialogos/DialogoVerFichaJugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/mvc/gui/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/mvc/gui/Controlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/mvc/gui/Vista.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/mvc/gui/Vista.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/mvc/gui/Vista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/mvc/gui/Vista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestionNBA/mvc/modelo/Modelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestionNBA/mvc/modelo/Modelo.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ofhJCJkcbGypqTF43qYChnoE4a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -20,6 +149,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="266" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../.." />
@@ -33,8 +163,9 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sergo\Desktop\Clase\Dam2\Desarrollo de interfaces\Practica3\informes" />
-      <recent name="C:\Users\sergo\Desktop\Clase\Dam2\Desarrollo de interfaces\Practica3\src" />
       <recent name="C:\Users\sergo\Desktop\Clase\Dam2\Desarrollo de interfaces\Practica3\libs" />
+      <recent name="C:\Users\sergo\Desktop\Clase\Dam2\Desarrollo de interfaces\Practica3\out\production\Practica3\META-INF" />
+      <recent name="C:\Users\sergo\Desktop\Clase\Dam2\Desarrollo de interfaces\Practica3\src" />
       <recent name="C:\Users\sergo\Desktop\Clase\Dam2\Desarrollo de interfaces\Practica3" />
     </key>
   </component>
@@ -72,22 +203,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613766885430">
+    <state x="488" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614721676002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="488" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1613766885430" />
-    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1614032095051">
+    <state x="488" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1614721676002" />
+    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1614726304171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1614032095051" />
-    <state x="498" y="202" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1614019423482">
+    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1614726304171" />
+    <state x="498" y="202" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1614424251453">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="202" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1614019423482" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614031189042">
+    <state x="498" y="202" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1614424251453" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614726189623">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1614031189042" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1614726189623" />
     <state x="644" y="300" key="#com.intellij.uiDesigner.palette.ComponentItemDialog.OneOff" timestamp="1613684599229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -96,46 +227,70 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1613845761672" />
-    <state x="526" y="169" width="690" height="504" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1614031840573">
+    <state x="526" y="169" width="690" height="532" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1614510187310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="526" y="169" width="690" height="504" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1614031840573" />
-    <state x="473" y="154" key="FileChooserDialogImpl" timestamp="1614034217702">
+    <state x="526" y="169" width="690" height="532" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1614510187309" />
+    <state x="473" y="154" key="FileChooserDialogImpl" timestamp="1614726311660">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="473" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614034217702" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1614032993689">
+    <state x="473" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614726311660" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1614726471446">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614032993689" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1614032993689">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614726471446" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1614726471445">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1614032993689" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1614032993689">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1614726471445" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1614726471445">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1614032993689" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1614032993689">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1614726471445" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1614726471446">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1614032993689" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1614032167309">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1614726471446" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1614720544837">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1614032167309" />
-    <state x="516" y="154" key="com.intellij.uiDesigner.propertyInspector.editors.string.KeyChooserDialog" timestamp="1614026528746">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614720544837" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1614720544836">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="516" y="154" key="com.intellij.uiDesigner.propertyInspector.editors.string.KeyChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1614026528746" />
-    <state x="555" y="293" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog" timestamp="1614026529968">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1614720544836" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1614720544836">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="555" y="293" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog/0.0.1536.824@0.0.1536.824" timestamp="1614026529968" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1614720544836" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1614720544836">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1614720544836" />
+    <state x="470" y="123" key="RollbackChangesDialog" timestamp="1614101407871">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="470" y="123" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1614101407871" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1614726313055">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1614726313055" />
+    <state x="516" y="154" key="com.intellij.uiDesigner.propertyInspector.editors.string.KeyChooserDialog" timestamp="1614509681543">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="516" y="154" key="com.intellij.uiDesigner.propertyInspector.editors.string.KeyChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1614509681543" />
+    <state x="555" y="293" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog" timestamp="1614509682418">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="555" y="293" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog/0.0.1536.824@0.0.1536.824" timestamp="1614509682418" />
     <state x="499" y="168" key="extract.method.dialog" timestamp="1613911843794">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="168" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1613911843794" />
+    <state x="462" y="144" width="611" height="536" key="find.popup" timestamp="1614506992140">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="462" y="144" width="611" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1614506992140" />
     <state x="209" y="33" key="new project wizard" timestamp="1613761221080">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

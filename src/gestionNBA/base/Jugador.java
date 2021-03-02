@@ -3,7 +3,9 @@ package gestionNBA.base;
 import javax.swing.*;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class Jugador implements Comparable<Jugador>, Serializable{
 
@@ -12,15 +14,15 @@ public class Jugador implements Comparable<Jugador>, Serializable{
     private LocalDate fechaNacimiento;
     private int puntosAnotados;
     private Icon fotoJugador;
-    private Equipo equipo;
+    private List<Equipo>equipos;
 
-    public Jugador(String nombre, String apellidos, LocalDate fechaNacimiento, int puntosAnotados, Equipo equipo, Icon fotoJugador) {
+    public Jugador(String nombre, String apellidos, LocalDate fechaNacimiento, int puntosAnotados, Icon fotoJugador) {
         super();
         this.nombreJugador = nombre;
         this.apellidosJugador = apellidos;
         this.fechaNacimiento = fechaNacimiento;
         this.puntosAnotados = puntosAnotados;
-        this.equipo = equipo;
+        equipos = new ArrayList<Equipo>();
         this.fotoJugador = fotoJugador;
     }
 
@@ -40,21 +42,18 @@ public class Jugador implements Comparable<Jugador>, Serializable{
 
     public void setPuntosAnotados(int puntosAnotados) { this.puntosAnotados = puntosAnotados; }
 
-    public Equipo getEquipo() {
-        return equipo;
+    public List<Equipo> getEquipos() {
+        return equipos;
     }
 
-    public void setEquipo(Equipo equipo) {
-        //Si antes ya tenia equipo, lo elimino de su lista
-        if(this.equipo != null){
-            this.equipo.getJugadores().remove(this);
-        }
-        this.equipo = equipo;
-        //Tambien annado este jugador a la lista de jugadores de su equipo
-        if(equipo != null){
-            equipo.getJugadores().add(this);
-            Collections.sort(equipo.getJugadores());
-        }
+    public void setEquipos(List<Equipo> equipos) {
+        this.equipos = equipos;
+    }
+
+    public void annadirEquiposAJugador(Equipo equipo) { equipos.add(equipo); }
+
+    public void eliminarEquipo(Equipo equipo){
+        equipos.remove(equipo);
     }
 
     public Icon getFotoJugador() {
@@ -68,11 +67,13 @@ public class Jugador implements Comparable<Jugador>, Serializable{
     @Override
     public String toString() {
         String cadena = "";
-        if (getEquipo()==null) {
+        if (equipos.isEmpty()) {
             cadena = nombreJugador + " " + apellidosJugador + " - Agente Libre";
         }
-        else {
-            cadena = nombreJugador + " " + apellidosJugador + " - " + equipo.getNombreEquipo();
+        else if (equipos.size() == 1) {
+            cadena = nombreJugador + " " + apellidosJugador + " - " + equipos.size() + " equipo";
+        } else {
+            cadena = nombreJugador + " " + apellidosJugador + " - " + equipos.size() + " equipos";
         }
         return cadena;
     }

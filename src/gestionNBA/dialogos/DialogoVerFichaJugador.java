@@ -1,9 +1,13 @@
 package gestionNBA.dialogos;
 
+import gestionNBA.base.Equipo;
 import gestionNBA.base.Jugador;
+import gestionNBA.mvc.modelo.Modelo;
+import gestionNBA.util.Util;
 
 import javax.swing.*;
 import java.awt.event.*;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class DialogoVerFichaJugador extends JDialog {
@@ -15,18 +19,32 @@ public class DialogoVerFichaJugador extends JDialog {
     private JLabel lblPuntosFichaJugador;
     private JLabel lblEquipoFichaJugador;
     private JLabel lblFotoFichaJugador;
-    private JLabel lblTxtNombreEquipo;
+    private JList listaEquiposDialogoJugador;
+    private JButton botEliminarEquipos;
     private ResourceBundle resourceBundle;
     private Jugador jugador;
+    private Modelo modelo;
 
-    public DialogoVerFichaJugador(Jugador jugador) {
+    DefaultListModel<Equipo> equiposDlm;
+
+    public DialogoVerFichaJugador(Jugador jugador, Modelo modelo) {
         this.jugador = jugador;
-        mostrarDatosFichaJugador();
+        this.modelo = modelo;
 
         resourceBundle = ResourceBundle.getBundle("idiomaResourceBundle");
 
+        iniciarModelos();
+        mostrarDatosFichaJugador();
         actionListeners();
         initUI();
+    }
+
+    /**
+     * Método que inicializa los diferentes modelos para listar.
+     */
+    private void iniciarModelos() {
+        equiposDlm = new DefaultListModel<>();
+        listaEquiposDialogoJugador.setModel(equiposDlm);
     }
 
     /**
@@ -52,23 +70,51 @@ public class DialogoVerFichaJugador extends JDialog {
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+
+        botEliminarEquipos.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (Util.mostrarDialogoSiNo(resourceBundle.getString("texto.mostrarDialogoSiNoJugadores")) == JOptionPane.YES_OPTION) {
+                    eliminarEquiposJugador();
+                    listarEquipos();
+                }
+            }
+        });
+    }
+
+    /**
+     * Método que elimina los Equipos seleccionados del Jugador actual.
+     */
+    private void eliminarEquiposJugador() {
+        List<Equipo> equipoLista = listaEquiposDialogoJugador.getSelectedValuesList();
+        for (Equipo equipo : equipoLista) {
+            equipo.eliminarJugador(jugador);
+            jugador.eliminarEquipo(equipo);
+        }
+        listarEquipos();
+    }
+
+    /**
+     * Metodo que refresca el jlist de Equipos de la seccion del Jugador.
+     */
+    private void listarEquipos() {
+        equiposDlm.clear();
+        for(Equipo equipo : modelo.getEquipos()){
+            if (jugador.getEquipos().contains(equipo)) {
+                equiposDlm.addElement(equipo);
+            }
+        }
     }
 
     /**
      * Método que muestra en los campos los datos del Jugador seleccionado.
      */
     private void mostrarDatosFichaJugador() {
+        listarEquipos();
         lblNombreFichaJugador.setText(jugador.getNombreJugador());
         lblApellidosFichaJugador.setText(jugador.getApellidosJugador());
         lblFechaNacimientoFichaJugador.setText(String.valueOf(jugador.getFechaNacimiento()));
         lblPuntosFichaJugador.setText(String.valueOf(jugador.getPuntosAnotados()));
-        if (jugador.getEquipo() == null) {
-            lblEquipoFichaJugador.setText("Agente Libre");
-        }
-        else {
-            lblEquipoFichaJugador.setIcon(jugador.getEquipo().getFotoEquipo());
-            lblTxtNombreEquipo.setText(jugador.getEquipo().getNombreEquipo());
-        }
         lblFotoFichaJugador.setIcon(jugador.getFotoJugador());
     }
 

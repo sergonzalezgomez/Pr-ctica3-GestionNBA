@@ -99,7 +99,6 @@ public class Vista {
         listaEquipos.setModel(equiposDlm);
         listaConferencias.setModel(conferenciasDlm);
 
-        cmboxEquipos.setModel(equiposDcbm);
         cmboxConferencias.setModel(conferenciasDcbm);
     }
 
@@ -110,11 +109,31 @@ public class Vista {
         botCrearJugador.getRootPane().setDefaultButton(botCrearJugador);
 
         botCrearJugador.setMnemonic(KeyEvent.VK_J);
+        botSeleccionarFotoJugador.setMnemonic(KeyEvent.VK_U);
+
         botCrearEquipo.setMnemonic(KeyEvent.VK_E);
+        botSeleccionarFotoEquipo.setMnemonic(KeyEvent.VK_B);
+
         botCrearConferencia.setMnemonic(KeyEvent.VK_C);
-        botEliminarJugador.setMnemonic(KeyEvent.VK_DELETE);
+
         botGuardarDatos.setMnemonic(KeyEvent.VK_G);
         botCargarDatos.setMnemonic(KeyEvent.VK_A);
+        botDocumentacion.setMnemonic(KeyEvent.VK_D);
         botConfiguracion.setMnemonic(KeyEvent.VK_P);
+
+        botGraficoJugadores.setMnemonic(KeyEvent.VK_1);
+        botInformeJugadores.setMnemonic(KeyEvent.VK_2);
+        botModificarJugador.setMnemonic(KeyEvent.VK_3);
+        botEliminarJugador.setMnemonic(KeyEvent.VK_4);
+
+        botGraficoEquipos.setMnemonic(KeyEvent.VK_6);
+        botInformeEquipos.setMnemonic(KeyEvent.VK_7);
+        botAnnadirJugadores.setMnemonic(KeyEvent.VK_8);
+        botModificarEquipo.setMnemonic(KeyEvent.VK_9);
+        botEliminarEquipo.setMnemonic(KeyEvent.VK_K);
+
+        botAnnadirEquipo.setMnemonic(KeyEvent.VK_I);
+        botModificarConferencia.setMnemonic(KeyEvent.VK_F);
+        botEliminarConferencia.setMnemonic(KeyEvent.VK_V);
     }
 }

@@ -16,7 +16,6 @@ import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.data.general.DefaultPieDataset;
-
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
@@ -220,6 +219,9 @@ public class Controlador implements ActionListener, FocusListener, ListSelection
 
     /**
      * Método que muestra un dialogo de seleccion de fichero para guardar los datos.
+     *
+     * @throws IOException Se lanza si no hay errores en la entrada/salida del programa.
+     * @throws ClassNotFoundException Se lanza si no se encuentra la clase.
      */
     private void guardarDatos() throws IOException, ClassNotFoundException {
         JFileChooser fileChooser = new JFileChooser();
@@ -231,6 +233,9 @@ public class Controlador implements ActionListener, FocusListener, ListSelection
 
     /**
      * Método que muestra un dialogo de seleccion de fichero para cargar los datos.
+     *
+     * @throws IOException Se lanza si no hay errores en la entrada/salida del programa.
+     * @throws ClassNotFoundException Se lanza si no se encuentra la clase.
      */
     private void cargarDatos() throws IOException, ClassNotFoundException {
         JFileChooser fileChooser = new JFileChooser();
@@ -243,6 +248,9 @@ public class Controlador implements ActionListener, FocusListener, ListSelection
 
     /**
      * Método que muestra un dialogo de seleccion de fichero para cargar los datos.
+     *
+     * @throws IOException Se lanza si no hay errores en la entrada/salida del programa.
+     * @throws URISyntaxException Se lanza si hay algún error en la sintaxis de la uri que pasamos.
      */
     private void abrirDocumentacion() throws URISyntaxException, IOException {
         Desktop.getDesktop().browse(new URI("https://github.com/sergonzalezgomez/Pr-ctica3-GestionNBA/wiki/Manual-de-Usuario"));
@@ -274,14 +282,14 @@ public class Controlador implements ActionListener, FocusListener, ListSelection
             }
             else {
                 Jugador jugador = new Jugador(vista.txtNombreJugador.getText(), vista.txtApellidosJugador.getText(),
-                        vista.datePickerFechaJugador.getDate(), (Integer) vista.spnPuntosJugador.getValue(),
-                        (Equipo) vista.cmboxEquipos.getSelectedItem(), vista.lblFotoJugador.getIcon());
+                        vista.datePickerFechaJugador.getDate(), (Integer) vista.spnPuntosJugador.getValue(), vista.lblFotoJugador.getIcon());
 
                 if (jugador.getFotoJugador() == null) {
                     ImageIcon icono = new ImageIcon(getClass().getResource("/jugadorSinFoto.png"));
                     ImageIcon iconoEscalado = Util.escalarImageIcon(icono, 100, 100);
                     jugador.setFotoJugador(iconoEscalado);
                 }
+
                 modelo.annadirJugador(jugador);
                 borrarCamposJugador();
                 listarJugadores();
@@ -336,7 +344,6 @@ public class Controlador implements ActionListener, FocusListener, ListSelection
         vista.txtApellidosJugador.setText("");
         vista.datePickerFechaJugador.setText("");
         vista.spnPuntosJugador.setValue(0);
-        vista.cmboxEquipos.setSelectedItem(null);
         vista.lblFotoJugador.setIcon(null);
     }
 
@@ -350,7 +357,7 @@ public class Controlador implements ActionListener, FocusListener, ListSelection
             Util.mostrarDialogoError(resourceBundle.getString("texto.dialogoErrorFichaJugador"));
         }
         else {
-            DialogoVerFichaJugador dialogo = new DialogoVerFichaJugador(fichaJugador);
+            DialogoVerFichaJugador dialogo = new DialogoVerFichaJugador(fichaJugador, modelo);
         }
     }
 
@@ -379,8 +386,9 @@ public class Controlador implements ActionListener, FocusListener, ListSelection
      */
     private void mostrarInformeJugadores() {
         try {
-            JasperCompileManager.compileReportToFile("informes/informeJugadores.jrxml");
-            JasperReport report = (JasperReport) JRLoader.loadObjectFromFile("informes/informeJugadores.jasper");
+            //JasperCompileManager.compileReportToFile("informes/informeJugadores.jrxml");
+
+            JasperReport report = (JasperReport) JRLoader.loadObject(getClass().getResource("/informeJugadores.jasper"));
 
             JRBeanCollectionDataSource coleccion = new JRBeanCollectionDataSource(modelo.getJugadores());
 
@@ -443,7 +451,6 @@ public class Controlador implements ActionListener, FocusListener, ListSelection
                         (Conferencia) vista.cmboxConferencias.getSelectedItem(), vista.lblFotoEquipo.getIcon());
 
                 modelo.annadirEquipo(equipo);
-                vista.cmboxEquipos.addItem(equipo);
                 borrarCamposEquipo();
                 listar();
             }
@@ -552,8 +559,9 @@ public class Controlador implements ActionListener, FocusListener, ListSelection
      */
     private void mostrarInformeEquipos() {
         try {
-            JasperCompileManager.compileReportToFile("informes/informeEquipos.jrxml");
-            JasperReport report = (JasperReport) JRLoader.loadObjectFromFile("informes/informeEquipos.jasper");
+            //JasperCompileManager.compileReportToFile("informes/informeEquipos.jrxml");
+
+            JasperReport report = (JasperReport) JRLoader.loadObject(getClass().getResource("/informeEquipos.jasper"));
 
             JRBeanCollectionDataSource coleccion = new JRBeanCollectionDataSource(modelo.getEquipos());
 
@@ -576,7 +584,10 @@ public class Controlador implements ActionListener, FocusListener, ListSelection
         }
         else {
             if (Util.mostrarDialogoSiNo(resourceBundle.getString("texto.mostrarDialogoSiNoTraspasarJugador")) == JOptionPane.YES_OPTION) {
-                jugador.setEquipo(equipo);
+                if (!jugador.getEquipos().contains(equipo)) {
+                    jugador.annadirEquiposAJugador(equipo);
+                    equipo.annadirJugadorAEquipos(jugador);
+                }
                 listar();
             }
         }
